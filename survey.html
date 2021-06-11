@@ -14,7 +14,33 @@
         </div>
         <div class="form-group">
             <label id="years-label" for="years">How many years have you been driving?</label>
-            <input type="number" name="years" id="years" class="form-control" placeholder="Enter the number of years you have been driving" required/>
+            <input type="number" name="years" min="0" max="100" id="years" class="form-control" placeholder="Enter the number of years you have been driving" required/>
+        </div>
+        <div class="form-group">
+            <p>How far do you travel every week by car?</p>
+            <select id="dropdown" class="form-control">
+            <option disabled selcted value> Select your distance</option>
+            <option value="short">0-10 miles</option>
+            <option value="medium">10-20 miles</option>
+            <option value="long">20-50 miles</option>
+            <option value="extreme">50-100 miles</option>
+        </select>
+        </div>
+        <div class="form-group">
+            <p>What are you worried about with self-driving cars?
+                <span class="clue">(Check all that apply)</span>
+            </p>
+            <label>
+                <input
+                type="checkbox"
+                name="prefer"
+                value="Getting into accidents"
+                class="input-checkbox">
+                Getting into an accident
+                
+            </label>
+
+
         </div>
     </form>
 </main>
